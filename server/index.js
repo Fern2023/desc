@@ -5,7 +5,7 @@ import { errorHandler } from './middlewares/ErrorHandler.js';
 import './db/server.js';
 
 import authRouter from './routes/authRouter.js';
-import booksRouter from './routes/booksRouter.js';
+
 
 
 const app = express();
@@ -31,7 +31,7 @@ app.use(cookieParser()); // cookie-parser
 
 // ROUTES
 app.use('/auth', authRouter);
-app.use('/books', booksRouter);
+
 
 
 // Error Handler
